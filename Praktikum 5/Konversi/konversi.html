@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>Kurs Rupiah</title>
+	<style type="text/css">
+		table{
+			margin: auto;
+			background-color: rgb(255, 211, 211);
+		}
+		h2{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>
+			<h2>Kurs Rupiah Mata Uang Asing</h2>
+		</legend>
+
+	<table border="1" width="50%" height="70px">
+		<tr>
+			<th>Masukan Nilai</th>
+			<th>Valas</th>
+			<th>Nilai Rupiah</th>
+		</tr>
+		<tr>
+			<td><input type="text" name="nilai_uang" id="nilai" placeholder="Masukkan Nilai Mata Uang"></td>
+			<td>
+				<select id="valas" onchange="konversi()">
+					<option value="">--Pilih Mata Uangnya---</option>
+					<option value="dolaras">Dolar Us</option>
+					<option value="dolarsingapore">Dolar Singapore</option>
+					<option value="ringgit">Ringgit Malaysia</option>
+					<option value="yen">Yen Japan</option>
+					<option value="euro">Euro</option>
+					<option value="real">Riyal Arab Saudi</option>					
+				</select>
+			</td>			
+			<td><input type="text" readonly name="hasil_konversi" id="hasil" placeholder="Hasil Konversi"></td>				
+		</tr>
+	</table>
+	</fieldset>
+
+</body>
+	<script src="script.js"></script>
+</html>
